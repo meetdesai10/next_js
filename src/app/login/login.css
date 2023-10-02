@@ -1,0 +1,16 @@
+.login ul{
+    display: flex;
+    gap: 30px;
+}
+.login ul li{
+    list-style-type: none;
+}
+.login ul li a{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
