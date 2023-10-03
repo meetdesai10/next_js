@@ -8,7 +8,7 @@ export default function page() {
     async function fetchdata() {
       let data = await fetch("https://dummyjson.com/products");
       data = await data.json();
-      setProduct(data.products);
+      setProduct(data.products);  
     }
     fetchdata();
   });
