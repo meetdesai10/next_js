@@ -5,16 +5,16 @@ import React from "react";
 export default function NavBar() {
   let rout = useRouter();
   return (
-    <div style={{ display: "grid",width:"fit-content",gap:"10px" }}>
+    <div style={{ display: "grid", width: "fit-content", gap: "10px" }}>
       <h1>Home page</h1>
       <Link href="/login">Go to login page</Link>
       <Link href="/about">Go to About page</Link>
       <Link href="/contact">Go to Contact page</Link>
       <Link href="/DynamicRouting">Studet details</Link>
       <Link href="/catchAllSegement">catchAllSegement</Link>
-      <button onClick={()=>rout.push("/login")}>Go To login page</button>
-      <button onClick={()=>rout.push("/about")}>Go To About page</button>
-      <button onClick={()=>rout.push("/contact")}>Go To Contact page</button>
+      <button onClick={() => rout.push("/login")}>Go To login page</button>
+      <button onClick={() => rout.push("/about")}>Go To About page</button>
+      <button onClick={() => rout.push("/contact")}>Go To Contact page</button>
     </div>
   );
 }
