@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 
 export default function page() {
   let [product, setProduct] = useState([]);
+  let [preproduct, setPreProduct] = useState([]);
   useEffect(() => {
     async function fetchdata() {
       let data = await fetch("https://dummyjson.com/products");
@@ -11,6 +12,9 @@ export default function page() {
     }
     fetchdata();
   });
+  function showdata(){
+    setPreProduct(product);
+  }
   return (
     <div>
       <table border={1} rules="all" style={{ width: "100%" }}>
@@ -35,6 +39,7 @@ export default function page() {
           })}
         </tbody>
       </table>
+      <button onClick={()=>showdata()} style={{cursor:"pointer"}}>Click here</button>
     </div>
   );
 }

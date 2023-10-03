@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import React, { useEffect } from "react";
 
 export default function FetchApi() {
@@ -7,6 +8,6 @@ export default function FetchApi() {
 //     data = await data.json();
 //   }, []);
   return <div>
-    <h1>Hello world</h1>
+    <Link href={"/fetch"}>CLick here to show data</Link>
   </div>;
 }
