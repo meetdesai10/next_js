@@ -9,3 +9,9 @@ export default function contactpage() {
     </div>
   )
 }
+export function generateMetadata(){
+  return {
+    title:"Contact Page",
+    description:"Contact Page description"
+  }
+}

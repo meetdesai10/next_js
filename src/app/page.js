@@ -1,14 +1,17 @@
 import React from "react";
 import NavBar from "./NavBar";
-import FetchApi from "./FetchApi";
 import Link from "next/link";
 import Bootstrap from "./Bootstrap";
+import CssModule from "./CssModule";
+import FontGoogle from "./FontGoogle";
+import Generatemetadata from "./dynamictitle/page";
 export default function page() {
   return (
     <>
       {/* <NavBar /> */}
-      {/* <FetchApi/> */}
-      <Bootstrap/>
+      {/* <Bootstrap/> */}
+      {/* <CssModule/> */}
+      {/* <FontGoogle/> */}
     </>
   )
 }
