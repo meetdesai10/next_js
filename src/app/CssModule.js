@@ -1,6 +1,6 @@
 "use client"
 import React, { useState } from "react";
-import Style from "../Css/Frist.module.css";
+import Style from "./Css/Frist.module.css"
 export default function CssModule() {
   let [color, setcolor] = useState(true);
   function changeColor() {
